@@ -14,7 +14,7 @@ set -euo pipefail
 
 LAN_CIDR="${LAN_CIDR:-192.168.99.0/24}"
 WAN_IF="${WAN_IF:-pnet0}"
-DNSDIST_LISTEN="${DNSDIST_LISTEN:-0.0.0.0:53}"
+DNSDIST_LISTEN="${DNSDIST_LISTEN:-192.168.99.10:53}"
 UPSTREAM_DNS_RAW="${UPSTREAM_DNS:-223.5.5.5:53,114.114.114.114:53}"
 DNSDIST_CONF="/etc/dnsdist/dnsdist.conf"
 SYSCTL_CONF="/etc/sysctl.d/99-dnsdist-router.conf"
